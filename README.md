@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+# Clean Code Principles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## __Variáveis__
 
-## Available Scripts
+### 1. Sempre deixar suas variáveis o mais descritivas possíveis. 
+### 2. Não abreviar nome de variáveis.
+### 3. Evitar redundâncias.
 
-In the project directory, you can run:
+<br/>
 
-### `yarn start`
+## __Funções__
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. Sempre deixar suas funções o mais descritivas possíveis.
+### 2. Cada função deve ter apenas uma responsabilidade.
+### 3. Sempre começar funções com verbo.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+## __Comentários__
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Na maioria das vezes mais atrapalhará do que ajudará.
+### 2. Comentários são desatualizados. 
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## __Comentários Úteis__
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Para descrever um bug.
+### 2. Para descrever uma regra de negócio. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br/>
 
-### `yarn eject`
+## __Números Mágicos__
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 1. Sempre declarar os números.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Anti Pattern
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## __Definição__
 
-## Learn More
+### Um padrão de código ruim.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Exemplos
+
+### **- Prop Drilling (React)**
+    Resolução: É quando uma propriedade atravessa vários componentes.
+
+### **- Mal uso das Keys (React)**
+    Resolução: A key deve ser única e previsível.
+
+### **- Componentes que retornam múltiplos componentes**
+    Resolução: Crie micro componentes.
+
+<br/>
+
+# Code Smell (Código Sujo)
+
+## Exemplos
+
+### **- Múltiplos níveis de indentação**
+    Resolução: Uso de Early Return. 
+
+### **- Funções que recebem muitos parâmetros**
+    Resolução: Dividir a função em funções menores.
+
+### **- Funções muito longas**
+    Resolução: Dividir a função em funções menores.
+
+<br/>
+
+# Princípios da Programação
+
+## __DRY__ (Don't repeat yourself)
+
+### Abstrair o código comum com alteração apenas dos parâmetros.
+
+<br/>
+
+## __KISS__ (Keep it simple stupid)
+
+### Manter o código o mais estupidamente simples possível.
+
+<br/>
+
+## __YAGNI__ (You ain't gonna need it)
+
+### Não adicionar ferramentas desnecessárias no código.
+
+<br/>
+
+# Dica Bônus
+
+## 1. Sempre usar linters na aplicação.
+## 2. Código Limpo é um código de fácil compreensão.
