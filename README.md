@@ -78,9 +78,13 @@
 
 ### Abstrair o código comum com alteração apenas dos parâmetros.
 
+<br/>
+
 ## __KISS__ (Keep it simple stupid)
 
 ### Manter o código o mais estupidamente simples possível.
+
+<br/>
 
 ## __YAGNI__ (You ain't gonna need it)
 
